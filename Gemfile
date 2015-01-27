@@ -2,6 +2,11 @@ source 'https://rubygems.org'
 
 gem 'rack'
 gem 'sinatra'
+gem 'wkhtmltopdf-binary'
+
+group :production, :staging do
+  gem 'thin'
+end
 
 group :development do
   gem 'pry'
