@@ -9,5 +9,5 @@ end
 post '/' do
   response['Content-Type']        = 'application/pdf'
   response['Content-Disposition'] = 'inline'
-  `echo "#{erb(:pdf, layout: false)}" | bundle exec wkhtmltopdf --encoding utf8 - -`
+  `echo "#{erb(:pdf, layout: false)}" | bundle exec wkhtmltopdf --encoding utf8 - - 2>/dev/null`
 end
