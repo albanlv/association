@@ -22,13 +22,13 @@
         </div>
         <div class="tab-content">
           <div class="tab-pane" id="tab1">
-            <form>
+            <form action="/" method="post">
               <fieldset>
                 <div class="row-fluid">
                   <div class="span4">
                     <legend>Dénomination</legend>
                     <label>Le nom de votre assocation</label>
-                    <input type="text" placeholder="">
+                    <input type="text" placeholder="" name="name" />
                   </div>
                   <div class="span8 well">
                     Indiquez ici la dénomination de votre association. Par exemple, <em>Crisalis</em> ou <em>randonneurs crestois</em>. Ne faites pas référence au terme « association » ou à la loi de 1901, Vous pouvez adopter une dénomination de fantaisie mais attention à ne pas enfreindre les droits des tiers. Consultez ici quelques conseils pour choisir en toute sécurité la dénomination de votre association. Lien
@@ -41,9 +41,9 @@
                   <div class="span4">
                     <legend>Siège</legend>
                     <label>Commune</label>
-                    <input type="text" placeholder="">
+                    <input type="text" placeholder="" name="city" />
                     <label>Code postal</label>
-                    <input type="text" placeholder="">
+                    <input type="text" placeholder="" name="post_code" />
                   </div>
                   <div class="span8 well">
                     Nous vous conseillons de préciser uniquement la commune et le code postal. C’est la seule exigence de la loi. De cette manière, vous pourrez déplacer le siège dans la commune sans procéder à une modification des statuts. Dans le formulaire, vous pourrez déclarer une adresse de gestion dans le ressort de cette commune.
@@ -260,6 +260,8 @@
                   </div>
                 </div>
               </fieldset>
+
+              <button class="btn btn-default" type="submit">Submit</button>
             </form>
           </div>
           <div class="tab-pane" id="tab2">
