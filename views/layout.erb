@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Statuts association 1901</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/prettify.css" rel="stylesheet">
+  </head>
+  <body>
+    <%= yield %>
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.bootstrap.wizard.js"></script>
+    <script src="js/prettify.js"></script>
+    <script>
+      $(document).ready(function() {
+        	$('#rootwizard').bootstrapWizard({onTabShow: function(tab, navigation, index) {
+      		var $total = navigation.find('li').length;
+      		var $current = index+1;
+      		var $percent = ($current/$total) * 100;
+      		$('#rootwizard').find('.bar').css({width:$percent+'%'});
+      	}});	
+      	window.prettyPrint && prettyPrint()
+      });	
+    </script>
+  </body>
+</html>
