@@ -1,12 +1,13 @@
-Association
-===========
+# Association
 
-Installing
-----------
+## Installing
 
 First do : `bundle install`
 
-Running
--------
+## Running
 
-Do: `shotgun app.rb`
+Do: `bundle exec shotgun app.rb`
+
+## Testing
+
+Do: `bundle exec rspec`
