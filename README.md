@@ -1,6 +1,11 @@
 Association
 ===========
 
+Installing
+----------
+
+First do : `bundle install`
+
 Running
 -------
 
