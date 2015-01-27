@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Statuts association 1901</title>
+    <!-- Bootstrap -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="prettify.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class='container'>
+      <div class="span12">
+        <section id="wizard">
+          <div class="page-header">
+            <h1>Remplissez le formulaire ci-dessous pour obtenir vos statuts</h1>
+          </div>
+          <div id="rootwizard">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="container">
+                  <ul>
+                    <li><a href="#tab1" data-toggle="tab">1 Mentions obligatoires</a></li>
+                    <li><a href="#tab2" data-toggle="tab">2 Modèle socio-économique</a></li>
+                    <li><a href="#tab3" data-toggle="tab">3 Membres</a></li>
+                    <li><a href="#tab4" data-toggle="tab">4 Gouvernance</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div id="bar" class="progress progress-striped active">
+              <div class="bar"></div>
+            </div>
+            <div class="tab-content">
+              <div class="tab-pane" id="tab1">
+                <form>
+                  <fieldset>
+                    <div class="row-fluid">
+                      <div class="span4">
+                        <legend>Dénomination</legend>
+                        <label>Le nom de votre assocation</label>
+                        <input type="text" placeholder="">
+                      </div>
+                      <div class="span8 well">
+                        Indiquez ici la dénomination de votre association. Par exemple, <em>Crisalis</em> ou <em>randonneurs crestois</em>. Ne faites pas référence au terme « association » ou à la loi de 1901, Vous pouvez adopter une dénomination de fantaisie mais attention à ne pas enfreindre les droits des tiers. Consultez ici quelques conseils pour choisir en toute sécurité la dénomination de votre association. Lien 
+                      </div>
+                    </div>
+                  </fieldset>
+                  <hr>
+                  <fieldset>
+                    <div class="row-fluid">
+                      <div class="span4">
+                        <legend>Siège</legend>
+                        <label>Commune</label>
+                        <input type="text" placeholder="">
+                        <label>Code postal</label>
+                        <input type="text" placeholder="">
+                      </div>
+                      <div class="span8 well">
+                        Nous vous conseillons de préciser uniquement la commune et le code postal. C’est la seule exigence de la loi. De cette manière, vous pourrez déplacer le siège dans la commune sans procéder à une modification des statuts. Dans le formulaire, vous pourrez déclarer une adresse de gestion dans le ressort de cette commune.
+                      </div>
+                    </div>
+                  </fieldset>
+                  <hr>
+                  <fieldset>
+                    <div class="row-fluid">
+                      <div class="span4">
+                        <legend>Durée, par défaut illimitée</legend>
+                        <em><label>Sinon, précisez la date à laquelle prendra fin votre association</label>
+                        <input type="text" placeholder="">
+                        <label>Ou l'événement qui déclenchera la réalisation de l'objet associatif</label>
+                        <input type="text" placeholder="">
+                        <label>Ou la durée en années de votre association</label>
+                        <input type="text" placeholder=""></em>
+                      </div>
+                      <div class="span8 well">
+                        Par défaut, nous vous proposons une durée illimitée. (Cela ne vous empêche pas à n’importe quel moment de réunir une assemblée générale pour dissoudre l’association et mettrez fin au projet). Toutefois, vous pouvez spécifier une durée de vie limitée pour votre association si cela est important (association de préfiguration, association portant un contrat immobilier, etc). <em>Si vous voulez mettre un terme à votre projet, vous pouvez préciser une date de fin (le jour/mois/année), une durée de vie (par ex. 30 ans) ou un événement qui marquera la disparition de l’association (par ex. la création d’une association portant le projet).</em>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <hr>
+                  <fieldset>
+                    <table class="table table-hover table-bordered table-striped">
+                      <caption>Cocher un seul choix correspondant à l'activité principale</caption>
+                      <thead>
+                        <tr>
+                          <th>Type d'activité</th>
+                          <th>Commentaire</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <label class="radio">
+                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                            Association proposant aux particuliers des activités loisirs et artistiques en groupe/milieu scolaire
+                            </label>
+                          </td>
+                          <td>
+                            Ces associations organisent des pratiques artistiques, culturelles et/ou pédagogiques en groupes ou en milieu scolaire, hors activités sportives.  Si votre association dispense ces activités dans le cadre de cours particuliers se déroulant au domicile des personnes, vous devez plutôt opter pour une association de type 5 Association proposant des services au domicile des personnes. Vous pouvez également spécifier que votre association interviendra en milieu scolaire ou pour former des enseignants ; cela facilitera vos démarches par la suite. Sous certaines conditions, ces associations peuvent bénéficier du régime fiscal des associations fermées.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="radio">
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                            Association artistique spectacle vivant amateur 
+                            </label>
+                          </td>
+                          <td>
+                            Ces associations accueillent la pratique amateur de la musique, du théâtre, du chant et de tous les spectacles vivants. Elles peuvent organiser occasionnellement des spectacles et dispenser à titre habituel des cours et séances de pratiques. Sous certaines conditions, ces associations peuvent bénéficier du régime fiscal des associations fermées.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="radio">
+                            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                            <input type="radio"> 
+                            Association portant une action collective, intérêt général local
+                            </label>
+                          </td>
+                          <td>
+                            Ces associations représentent et défendent les intérêts de personnes privées sur une base affinitaire ou géographique.  C’est typiquement le modèle des associations “d’anciens” ou de locataires. Elles peuvent organiser des activités et proposer des manifestations exceptionnelles. Sous certaines conditions, ces associations peuvent bénéficier du régime fiscal des associations fermées.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="radio">
+                            <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+                            <input type="radio"> 
+                            Association humanitaire ou de solidarité internationale (faisant appel aux dons)
+                            </label>
+                          </td>
+                          <td>
+                            Ces associations organisent des chantiers de solidarité internationale et les financent en faisant appel aux dons. Sous certaines conditions, elles peuvent émettre des reçus fiscaux pour leurs adhérents et donateurs. Cela leur interdit toutefois des conduire des activités à caractère lucratif.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="radio">
+                            <input type="radio" name="optionsRadios" id="optionsRadios5" value="option5">
+                            Association proposant des services au domicile des personnes
+                            </label>
+                          </td>
+                          <td>
+                            Ces associations proposent aux particuliers des services à domicile dans le domaine du ménage, de l’entretien de la maison ou du soutien scolaire. Elles interviennent en mode mandataire ou prestataires. Leur activité reste soumise à la loi du janvier . Les prestations rendues aux familles ouvrent droit pour elles à l’avantage fiscal de l’article 199 du CGI.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="radio">
+                            <input type="radio" name="optionsRadios" id="optionsRadios6" value="option6">
+                            Association de défense de l’environnement
+                            </label>
+                          </td>
+                          <td>
+                            Les associations agréées de défense de l’environnement peuvent agir dans 4 domaines différents : protection et l'amélioration du cadre de vie, de l'habitat et de l'environnement, la lutte contre les nuisances sonores, lutte contre la pollution, défense de l'environnement par la protection de la flore sauvage [et/ou] de la faune sauvage
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="radio">
+                            <input type="radio" name="optionsRadios" id="optionsRadios7" value="option7">
+                            Association de défense des consommateurs
+                            </label>
+                          </td>
+                          <td>
+                            l’agrément “défense du consommateur” est accordé aux associations justifiant de 
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="radio">
+                            <input type="radio" name="optionsRadios" id="optionsRadios8" value="option8">
+                            Association gestionnaire d’un équipement collectif
+                            </label>
+                          </td>
+                          <td>
+                            Sous certaines conditions, ces associations peuvent bénéficier du régime fiscal des associations fermées.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="radio">
+                            <input type="radio" name="optionsRadios" id="optionsRadios9" value="option9">
+                            Association portant une communauté en ligne, un site web, un forum
+                            </label>
+                          </td>
+                          <td>
+                            Sous certaines conditions, ces associations peuvent bénéficier du régime fiscal des associations fermées.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="radio">
+                            <input type="radio" name="optionsRadios" id="optionsRadios10" value="option10">
+                            Association portant un cercle privé, club,amicale
+                            </label>
+                          </td>
+                          <td>
+                            Sous certaines conditions, ces associations peuvent bénéficier du régime fiscal des associations fermées.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="radio">
+                            <input type="radio" name="optionsRadios" id="optionsRadios11" value="option11">
+                            Fédération d’associations, réseau d’entreprises
+                            </label>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <label>Sinon, précisez l'objet et les activités lucratives</label>
+                    <input type="textarea" placeholder="">
+                  </fieldset>
+                  <hr>
+                  <fieldset>
+                    <div class="row-fluid">
+                      <div class="span4">
+                        <legend>Type d'association</legend>
+                        <label>Un seul choix possible:</label>
+                        <label class="radio">
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                        Association déclarée
+                        </label>
+                        <label class="radio">
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                        Association non déclarée
+                        </label>
+                        <label class="radio">
+                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                        Association agréée
+                        </label>
+                        <label class="radio">
+                        <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+                        Association reconnue d'Utilité Publique
+                        </label>
+                      </div>
+                      <div class="span8 well">
+                        Un seul choix est possible.<br> 
+                        Par défaut, il est proposé de créer une association déclarée. Ce type d’association est simple et dispose d’une capacité juridique quasi entière, sous réserve d’effectuer une banale formalité déclarative. L’association déclarée vous permet d’ouvrir un compte en banque et de collecter des fonds au service de votre projet. 
+                        Dans certains domaines (sport, éducation populaire, services à la personne, l’association doit faire l’objet d’un agrément pour intervenir ; son fonctionnement juridique est alors plus rigoureux. Les statuts doivent présenter certaines garanties (intérêt général)
+                        Dans certains cas, les fondateurs peuvent avoir intérêt à ne pas déclarer l’association. L’association non déclarée peut exister mais fonctionne sur une base limitée. 
+                      </div>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+              <div class="tab-pane" id="tab2">
+                2
+              </div>
+              <div class="tab-pane" id="tab3">
+                3
+              </div>
+              <div class="tab-pane" id="tab4">
+                4
+              </div>
+              <div class="tab-pane" id="tab5">
+                5
+              </div>
+              <div class="tab-pane" id="tab6">
+                6
+              </div>
+              <div class="tab-pane" id="tab7">
+                7
+              </div>
+              <ul class="pager wizard">
+                <li class="previous first" style="display:none;"><a href="#">First</a></li>
+                <li class="previous"><a href="#">Previous</a></li>
+                <li class="next last" style="display:none;"><a href="#">Last</a></li>
+                <li class="next"><a href="#">Next</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../jquery.bootstrap.wizard.js"></script>
+    <script src="../prettify.js"></script>
+    <script>
+      $(document).ready(function() {
+        	$('#rootwizard').bootstrapWizard({onTabShow: function(tab, navigation, index) {
+      		var $total = navigation.find('li').length;
+      		var $current = index+1;
+      		var $percent = ($current/$total) * 100;
+      		$('#rootwizard').find('.bar').css({width:$percent+'%'});
+      	}});	
+      	window.prettyPrint && prettyPrint()
+      });	
+    </script>
+  </body>
+</html>
