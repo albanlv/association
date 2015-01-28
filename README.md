@@ -19,6 +19,7 @@ To deploy new code do:
 
 * `ssh deployer@178.62.143.175`
 * `cd association`
+* `bundle install`
 * `git pull origin master`
 * `touch tmp/restart.txt`
 

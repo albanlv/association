@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="span12 text-center">
+    <form action="/charge" method="post" class="payment">
+      <div class="row-fluid">
+        <label class="amount">
+          <span>Amount: €<%= settings.price / 100 %></span>
+        </label>
+      </div>
+
+      <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+              data-key="<%= settings.publishable_key %>"
+              data-amount="<%= settings.price %>"
+              data-currency="eur"
+              data-allow-remember-me="false"></script>
+    </form>
+  </div>
+</div>
