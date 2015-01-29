@@ -8,6 +8,17 @@
     <link href="css/prettify.css" rel="stylesheet">
   </head>
   <body>
+    <div class="container">
+      <div class="span12 text-center">
+        <% flashes.each do |class_suffix, msg| %>
+          <div class="alert alert-<%= class_suffix %> fade in">
+            <button class="close" data-dismiss="alert">×</button>
+            <%= msg %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+
     <%= yield %>
 
     <script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -15,15 +26,15 @@
     <script src="js/jquery.bootstrap.wizard.js"></script>
     <script src="js/prettify.js"></script>
     <script>
-      $(document).ready(function() {
-        	$('#rootwizard').bootstrapWizard({onTabShow: function(tab, navigation, index) {
-      		var $total = navigation.find('li').length;
-      		var $current = index+1;
-      		var $percent = ($current/$total) * 100;
-      		$('#rootwizard').find('.bar').css({width:$percent+'%'});
-      	}});	
-      	window.prettyPrint && prettyPrint()
-      });	
+     $(document).ready(function() {
+         $('#rootwizard').bootstrapWizard({onTabShow: function(tab, navigation, index) {
+      		   var $total = navigation.find('li').length;
+      		   var $current = index+1;
+      		   var $percent = ($current/$total) * 100;
+      		   $('#rootwizard').find('.bar').css({width:$percent+'%'});
+      	 }});	
+      	 window.prettyPrint && prettyPrint()
+     });	
     </script>
   </body>
 </html>
