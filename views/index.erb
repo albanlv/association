@@ -24,51 +24,40 @@
           <div class="tab-pane" id="tab1">
             <form action="/" method="post">
               <fieldset>
-                <div class="row-fluid">
-                  <div class="span4">
-                    <legend>Dénomination</legend>
-                    <label>Le nom de votre assocation</label>
-                    <input type="text" placeholder="" name="status[name]" />
-                  </div>
-                  <div class="span8 well">
-                    Indiquez ici la dénomination de votre association. Par exemple, <em>Crisalis</em> ou <em>randonneurs crestois</em>. Ne faites pas référence au terme « association » ou à la loi de 1901, Vous pouvez adopter une dénomination de fantaisie mais attention à ne pas enfreindre les droits des tiers. Consultez ici quelques conseils pour choisir en toute sécurité la dénomination de votre association. Lien
-                  </div>
-                </div>
+                <legend>Choisissez la dénomination de votre association</legend>
+                <label>Il s’agit du nom de votre association, tel qu’il apparaîtra dans tous les documents officiels, par ex.  <em>Les joyeux randonneurs crestois</em>. Ne faites pas référence au terme « association » ou à la loi de 1901, Vous pouvez adopter une dénomination de fantaisie (par ex. Crisalis) mais attention à ne pas enfreindre les droits des tiers (entreprises, marques). Consultez ici quelques conseils pour choisir en toute sécurité la dénomination de votre association. Lien</label>
+                <input type="text" placeholder="" name="status[name]" />
               </fieldset>
               <hr>
               <fieldset>
-                <div class="row-fluid">
-                  <div class="span4">
-                    <legend>Siège</legend>
-                    <label>Commune</label>
-                    <input type="text" placeholder="" name="status[city]" />
-                    <label>Code postal</label>
-                    <input type="text" placeholder="" name="status[post_code]" />
-                  </div>
-                  <div class="span8 well">
-                    Nous vous conseillons de préciser uniquement la commune et le code postal. C’est la seule exigence de la loi. De cette manière, vous pourrez déplacer le siège dans la commune sans procéder à une modification des statuts. Dans le formulaire, vous pourrez déclarer une adresse de gestion dans le ressort de cette commune.
-                  </div>
-                </div>
+                <legend>Siège de votre association</legend>
+                <label>
+                Il s’agit de l’adresse de domiciliation de votre association. Nous vous conseillons de préciser uniquement la commune et le code postal. C’est la seule exigence de la loi. De cette manière, vous pourrez déplacer le siège dans la commune sans procéder à une modification des statuts. Si vous voulez malgré tout préciser la rue, cliquez sur la case correspondante. 
+                </label>
+                <label>Commune</label>
+                <input type="text" placeholder="" name="status[city]" />
+                <label>Code postal</label>
+                <input type="text" placeholder="" name="status[post_code]" />
               </fieldset>
               <hr>
               <fieldset>
-                <div class="row-fluid">
-                  <div class="span4">
-                    <legend>Durée, par défaut illimitée</legend>
-                    <em><label>Sinon, précisez la date à laquelle prendra fin votre association</label>
-                      <input type="text" placeholder="">
-                      <label>Ou l'événement qui déclenchera la réalisation de l'objet associatif</label>
-                      <input type="text" placeholder="">
-                      <label>Ou la durée en années de votre association</label>
-                      <input type="text" placeholder=""></em>
-                  </div>
-                  <div class="span8 well">
-                    Par défaut, nous vous proposons une durée illimitée. (Cela ne vous empêche pas à n’importe quel moment de réunir une assemblée générale pour dissoudre l’association et mettrez fin au projet). Toutefois, vous pouvez spécifier une durée de vie limitée pour votre association si cela est important (association de préfiguration, association portant un contrat immobilier, etc). <em>Si vous voulez mettre un terme à votre projet, vous pouvez préciser une date de fin (le jour/mois/année), une durée de vie (par ex. 30 ans) ou un événement qui marquera la disparition de l’association (par ex. la création d’une association portant le projet).</em>
-                  </div>
-                </div>
+                <legend>Durée de votre association</legend>
+                <label>
+                Par défaut, nous vous proposons une durée illimitée. (Cela ne vous empêche pas à n’importe quel moment de réunir une assemblée générale pour dissoudre l’association et mettrez fin au projet). Toutefois, vous pouvez spécifier une durée de vie limitée pour votre association si cela est important (association de préfiguration, association portant un contrat immobilier, etc). Cliquez alors sur la case correspondante pour définir le terme de votre association.
+                </label>
+                <em><label>Sinon, précisez la date à laquelle prendra fin votre association</label>
+                <input type="text" placeholder="">
+                <label>Ou l'événement qui déclenchera la réalisation de l'objet associatif</label>
+                <input type="text" placeholder="">
+                <label>Ou la durée en années de votre association</label>
+                <input type="text" placeholder=""></em>
               </fieldset>
               <hr>
               <fieldset>
+                <legend>Objet de votre association</legend>
+                <label>
+                Il s’agit du but poursuivi par votre association, par ex. la pratique des arts plastiques ou la représentation des locataires de telle résidence. Nous vous proposons un certain nombre d’activités parmi les plus courantes. 
+                </label>
                 <table class="table table-hover table-bordered table-striped">
                   <caption>Cocher un seul choix correspondant à l'activité principale</caption>
                   <thead>
@@ -81,8 +70,8 @@
                     <tr>
                       <td>
                         <label class="radio">
-                          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-                          Association proposant aux particuliers des activités loisirs et artistiques en groupe/milieu scolaire
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                        Association proposant aux particuliers des activités loisirs et artistiques en groupe/milieu scolaire
                         </label>
                       </td>
                       <td>
@@ -92,8 +81,8 @@
                     <tr>
                       <td>
                         <label class="radio">
-                          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                          Association artistique spectacle vivant amateur
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                        Association artistique spectacle vivant amateur
                         </label>
                       </td>
                       <td>
@@ -103,9 +92,9 @@
                     <tr>
                       <td>
                         <label class="radio">
-                          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-                          <input type="radio">
-                          Association portant une action collective, intérêt général local
+                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                        <input type="radio">
+                        Association portant une action collective, intérêt général local
                         </label>
                       </td>
                       <td>
@@ -115,9 +104,9 @@
                     <tr>
                       <td>
                         <label class="radio">
-                          <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
-                          <input type="radio">
-                          Association humanitaire ou de solidarité internationale (faisant appel aux dons)
+                        <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+                        <input type="radio">
+                        Association humanitaire ou de solidarité internationale (faisant appel aux dons)
                         </label>
                       </td>
                       <td>
@@ -127,8 +116,8 @@
                     <tr>
                       <td>
                         <label class="radio">
-                          <input type="radio" name="optionsRadios" id="optionsRadios5" value="option5">
-                          Association proposant des services au domicile des personnes
+                        <input type="radio" name="optionsRadios" id="optionsRadios5" value="option5">
+                        Association proposant des services au domicile des personnes
                         </label>
                       </td>
                       <td>
@@ -138,8 +127,8 @@
                     <tr>
                       <td>
                         <label class="radio">
-                          <input type="radio" name="optionsRadios" id="optionsRadios6" value="option6">
-                          Association de défense de l’environnement
+                        <input type="radio" name="optionsRadios" id="optionsRadios6" value="option6">
+                        Association de défense de l’environnement
                         </label>
                       </td>
                       <td>
@@ -149,8 +138,8 @@
                     <tr>
                       <td>
                         <label class="radio">
-                          <input type="radio" name="optionsRadios" id="optionsRadios7" value="option7">
-                          Association de défense des consommateurs
+                        <input type="radio" name="optionsRadios" id="optionsRadios7" value="option7">
+                        Association de défense des consommateurs
                         </label>
                       </td>
                       <td>
@@ -160,8 +149,8 @@
                     <tr>
                       <td>
                         <label class="radio">
-                          <input type="radio" name="optionsRadios" id="optionsRadios8" value="option8">
-                          Association gestionnaire d’un équipement collectif
+                        <input type="radio" name="optionsRadios" id="optionsRadios8" value="option8">
+                        Association gestionnaire d’un équipement collectif
                         </label>
                       </td>
                       <td>
@@ -171,8 +160,8 @@
                     <tr>
                       <td>
                         <label class="radio">
-                          <input type="radio" name="optionsRadios" id="optionsRadios9" value="option9">
-                          Association portant une communauté en ligne, un site web, un forum
+                        <input type="radio" name="optionsRadios" id="optionsRadios9" value="option9">
+                        Association portant une communauté en ligne, un site web, un forum
                         </label>
                       </td>
                       <td>
@@ -182,8 +171,8 @@
                     <tr>
                       <td>
                         <label class="radio">
-                          <input type="radio" name="optionsRadios" id="optionsRadios10" value="option10">
-                          Association portant un cercle privé, club,amicale
+                        <input type="radio" name="optionsRadios" id="optionsRadios10" value="option10">
+                        Association portant un cercle privé, club,amicale
                         </label>
                       </td>
                       <td>
@@ -193,8 +182,8 @@
                     <tr>
                       <td>
                         <label class="radio">
-                          <input type="radio" name="optionsRadios" id="optionsRadios11" value="option11">
-                          Fédération d’associations, réseau d’entreprises
+                        <input type="radio" name="optionsRadios" id="optionsRadios11" value="option11">
+                        Fédération d’associations, réseau d’entreprises
                         </label>
                       </td>
                       <td>
@@ -202,31 +191,39 @@
                     </tr>
                   </tbody>
                 </table>
-                <label>Sinon, précisez l'objet et les activités lucratives</label>
+                <label>
+                Si votre projet ne rentre dans aucun de ces cas, formulez ci-dessous l’objet de votre association.
+                </label>
                 <input type="textarea" placeholder="">
               </fieldset>
               <hr>
               <fieldset>
-                <legend>Activités annexes (il est recommandé de cocher toutes les cases)</legend>
+                <legend>Moyens d'action</legend>
+                <label>
+                Il est d’usage de préciser dans les statuts les moyens d’actions que l’association mettra en œuvre pour réaliser son objet. Nous vous proposons par défaut une liste qui n’est pas limitative. Nous avons également ajouté les moyens spécifiques correspondant à l’objet que vous avez déclaré. Vous pouvez toutefois ajouter d’autres moyens en cochant la case prévue à cet effet. Si votre association conduit des activités lucratives, celles-ci seront automatiquement ajoutées à cette rubrique.
+                </label>
+                <label>
+                <em>Attention : ne modifiez cette rubrique que si vous savez exactement ce que vous faites.</em>
+                </label>
                 <label class="checkbox">
-                  <input type="checkbox"  checked>
-                  <label class="checkbox">
-                    <input type="checkbox"  checked>
-                    facultatif – L’organisation de cours, d’enseignement, de séances de pratique individuelle ou collective
-                  </label>
-                  <label class="checkbox">
-                    <input type="checkbox"  checked>
-                    l'organisation de conventions et événements;
-                  </label>
-                  <label class="checkbox">
-                    <input type="checkbox"  checked>
-                    l’organisation de diverses manifestations et toute initiative pouvant aider à la réalisation de l’objet de l’association ou au financement de ses projets ;
-                  </label>
-                  <label class="checkbox">
-                    <input type="checkbox"  checked>
-                  </label>
-                  <label>Ajouter des ativités annexes</label>
-                  <input type="textarea" placeholder="">
+                <input type="checkbox"  checked>
+                <label class="checkbox">
+                <input type="checkbox"  checked>
+                facultatif – L’organisation de cours, d’enseignement, de séances de pratique individuelle ou collective
+                </label>
+                <label class="checkbox">
+                <input type="checkbox"  checked>
+                l'organisation de conventions et événements;
+                </label>
+                <label class="checkbox">
+                <input type="checkbox"  checked>
+                l’organisation de diverses manifestations et toute initiative pouvant aider à la réalisation de l’objet de l’association ou au financement de ses projets ;
+                </label>
+                <label class="checkbox">
+                <input type="checkbox"  checked>
+                </label>
+                <label>Ajouter des ativités annexes</label>
+                <input type="textarea" placeholder="">
                 </label>
               </fieldset>
               <hr>
@@ -234,22 +231,25 @@
                 <div class="row-fluid">
                   <div class="span4">
                     <legend>Type d'association</legend>
-                    <label>Un seul choix possible:</label>
+                    <label>
+                    Par défaut, il est proposé de créer une association déclarée. Ce type d’association correspond aux situations les plus courantes. Toutefois vous pouvez décider de créer une association non déclarée. Si vous prévoyez de solliciter un agrément administratif, cochez la case correspondante : vos statuts seront alors adaptés aux exigences de la loi du 22 mars 2012.
+                    </label>
+                    <label>Un seul choix est possible:</label>
                     <label class="radio">
-                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                      Association déclarée
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    Association déclarée
                     </label>
                     <label class="radio">
-                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                      Association non déclarée
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    Association non déclarée
                     </label>
                     <label class="radio">
-                      <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-                      Association agréée
+                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                    Association agréée
                     </label>
                     <label class="radio">
-                      <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
-                      Association reconnue d'Utilité Publique
+                    <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+                    Association reconnue d'Utilité Publique
                     </label>
                   </div>
                   <div class="span8 well">
@@ -260,7 +260,6 @@
                   </div>
                 </div>
               </fieldset>
-
               <button class="btn btn-default" type="submit">Submit</button>
             </form>
           </div>
@@ -269,16 +268,16 @@
               <legend>Quel est l'ordre de grandeur du budget annuel (prévisionnel) de votre association:</legend>
               <label>Un seul choix possible:</label>
               <label class="radio">
-                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                Quelques milliers d'euros au maximum
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+              Quelques milliers d'euros au maximum
               </label>
               <label class="radio">
-                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                Entre 10 et 100.000 euros
+              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+              Entre 10 et 100.000 euros
               </label>
               <label class="radio">
-                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                Supérieur à 100.000 euros
+              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+              Supérieur à 100.000 euros
               </label>
             </fieldset>
             <fieldset>
@@ -286,28 +285,28 @@
               <div class="row-fluid">
                 <div class="span4">
                   <label class="checkbox">
-                    <input type="checkbox">
-                    Association fermée
+                  <input type="checkbox">
+                  Association fermée
                   </label>
                   <label class="checkbox">
-                    <input type="checkbox">
-                    Association sollicitant un agrément (intérêt général)
+                  <input type="checkbox">
+                  Association sollicitant un agrément (intérêt général)
                   </label>
                   <label class="checkbox">
-                    <input type="checkbox">
-                    Association sollicitant des subventions publiques
+                  <input type="checkbox">
+                  Association sollicitant des subventions publiques
                   </label>
                   <label class="checkbox">
-                    <input type="checkbox">
-                    Association émettant des reçus fiscaux pour les dons et les adhésions (art. 200 CGI)
+                  <input type="checkbox">
+                  Association émettant des reçus fiscaux pour les dons et les adhésions (art. 200 CGI)
                   </label>
                   <label class="checkbox">
-                    <input type="checkbox">
-                    Association conduisant des activités lucratives
+                  <input type="checkbox">
+                  Association conduisant des activités lucratives
                   </label>
                   <label class="checkbox">
-                    <input type="checkbox">
-                    Aucun régime particulier
+                  <input type="checkbox">
+                  Aucun régime particulier
                   </label>
                 </div>
                 <div class="span8 well">
@@ -318,40 +317,40 @@
             <fieldset>
               <legend>Sources de revenus</legend>
               <label class="checkbox">
-                <input type="checkbox">
-                Le bénévolat ;
+              <input type="checkbox">
+              Le bénévolat ;
               </label>
               <label class="checkbox">
-                <input type="checkbox">
-                Les cotisations ;
+              <input type="checkbox">
+              Les cotisations ;
               </label>
               <label class="checkbox">
-                <input type="checkbox">
-                Les subventions de l’état, des collectivités territoriales et des établissements publics ;
+              <input type="checkbox">
+              Les subventions de l’état, des collectivités territoriales et des établissements publics ;
               </label>
               <label class="checkbox">
-                <input type="checkbox">
-                Le produit des manifestations qu’elle organise ;
+              <input type="checkbox">
+              Le produit des manifestations qu’elle organise ;
               </label>
               <label class="checkbox">
-                <input type="checkbox">
-                Les intérêts et redevances des biens et valeurs qu’elle peut posséder ;
+              <input type="checkbox">
+              Les intérêts et redevances des biens et valeurs qu’elle peut posséder ;
               </label>
               <label class="checkbox">
-                <input type="checkbox">
-                La rétribution des services rendus ou des prestations fournies par l'association ;
+              <input type="checkbox">
+              La rétribution des services rendus ou des prestations fournies par l'association ;
               </label>
               <label class="checkbox">
-                <input type="checkbox">
-                Les dons manuels ;
+              <input type="checkbox">
+              Les dons manuels ;
               </label>
               <label class="checkbox">
-                <input type="checkbox">
-                à titre exceptionnel le recours en cas de nécessité, à un ou plusieurs emprunts bancaires ou privés
+              <input type="checkbox">
+              à titre exceptionnel le recours en cas de nécessité, à un ou plusieurs emprunts bancaires ou privés
               </label>
               <label class="checkbox">
-                <input type="checkbox">
-                (facultatif) L’appel à la générosité du public
+              <input type="checkbox">
+              (facultatif) L’appel à la générosité du public
               </label>
             </fieldset>
           </div>
@@ -362,20 +361,20 @@
               <div class="row-fluid">
                 <div class="span4">
                   <label class="radio">
-                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                    L’adhésion est libre et ouverte à tous (recommandé) par défaut.
+                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                  L’adhésion est libre et ouverte à tous (recommandé) par défaut.
                   </label>
                   <label class="radio">
-                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                    L’adhésion est soumise au respect de certaines conditions (précisez ici : par exemple : habiter à Grigny, avoir été salariés de FIRMU SA, être locataires du square des Myosotis, être malade et familles du syndrome Aspergum, etc)
+                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                  L’adhésion est soumise au respect de certaines conditions (précisez ici : par exemple : habiter à Grigny, avoir été salariés de FIRMU SA, être locataires du square des Myosotis, être malade et familles du syndrome Aspergum, etc)
                   </label>
                   <label class="radio">
-                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-                    L’adhésion est soumise à la décision d’un organe de l’association ou de certaines personnes (par ex. membres fondateurs). Le refus d’une candidature doit être motivé.
+                  <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                  L’adhésion est soumise à la décision d’un organe de l’association ou de certaines personnes (par ex. membres fondateurs). Le refus d’une candidature doit être motivé.
                   </label>
                   <label class="radio">
-                    <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4" checked>
-                    L’adhésion se fait par cooptation : la candidature est acceptée de manière discrétionnaire par une personne (choix impossible ici) ou un groupe constitué (par ex. organe de l’association, fondateurs)
+                  <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4" checked>
+                  L’adhésion se fait par cooptation : la candidature est acceptée de manière discrétionnaire par une personne (choix impossible ici) ou un groupe constitué (par ex. organe de l’association, fondateurs)
                   </label>
                 </div>
                 <div class="span8 well">
@@ -386,93 +385,87 @@
             <hr>
             <fieldset>
               <label>
-                Le cas échéant, l’adhérent peut quitter l’association : </label>
+              Le cas échéant, l’adhérent peut quitter l’association : </label>
               <label class="checkbox">
-                <input type="checkbox">
-                A sa demande. L’adhérent a le droit de se retirer à tout moment, en dénonçant son adhésion /par lettre recommandée et en n’acquittant plus la cotisation annuelle.
+              <input type="checkbox">
+              A sa demande. L’adhérent a le droit de se retirer à tout moment, en dénonçant son adhésion /par lettre recommandée et en n’acquittant plus la cotisation annuelle.
               </label>
               <label class="checkbox">
-                <input type="checkbox">
-                Automatiquement en cas de non-paiement de la cotisation annuelle (recommandé, par défaut)
+              <input type="checkbox">
+              Automatiquement en cas de non-paiement de la cotisation annuelle (recommandé, par défaut)
               </label>
               <label class="checkbox">
-                <input type="checkbox">
-                En cas de faute grave, de non-respect des statuts, sur exclusion prononcée comme sanction par AG/CA/Bureau/Membres fondateurs/autres
+              <input type="checkbox">
+              En cas de faute grave, de non-respect des statuts, sur exclusion prononcée comme sanction par AG/CA/Bureau/Membres fondateurs/autres
               </label>
             </fieldset>
             <hr>
             <fieldset>
-              <div class="row-fluid">
-                <div class="span4">
-                  <label> Pour participer aux activités de l’association, faut-il obligatoirement être adhérent ?</label>
-                  <label class="radio">
-                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                    Oui
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                    Non
-                  </label>
-                </div>
-                <div class="span8 well">
-                  Si vous n’avez pas d’idée claire à propos de cette question, renseignez-vous maintenant à propos du régime fiscal de votre future association. Certains choix statutaires conditionnent la manière dont votre activité sera considérée par l’administration fiscale ; c’est important. Consultez ici un article à propose de l’association fermée.
-                </div>
-              </div>
+              <label> Pour participer aux activités de l’association, faut-il obligatoirement être adhérent ?</label>
+              <label class="radio">
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+              Oui
+              </label>
+              <label class="radio">
+              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+              Non
+              </label>
+              Si vous n’avez pas d’idée claire à propos de cette question, renseignez-vous maintenant à propos du régime fiscal de votre future association. Certains choix statutaires conditionnent la manière dont votre activité sera considérée par l’administration fiscale ; c’est important. Consultez ici un article à propose de l’association fermée.
             </fieldset>
             <fieldset>
               <legend>Droits des membres</legend>
               <label>
-                Votre association peut identifier des membres fondateurs, pour leur conférer un statut particulier (facultatif). Par exemple, les membres fondateurs seront membre de droit du conseil d’administration d’une maison de retraite ou ils exerceront un droit de veto dans le recrutement d’un club privé.
-                <br>
-                A la qualité de fondateurs, l’association peut attacher toutes sortes de fonctions et privilèges (par ex. La dispense du paiement d’une cotisation).  Les membres fondateurs doivent être identifiés nominativement dans les statuts ou figurer sur une liste en annexe des statuts déposés en préfecture. Les privilèges ne doivent pas porter atteinte au caractère désintéressé de la gestion associative.
-                <br>
-                On peut créer autant de catégorie de membres que l’on veut ; il suffit de leur donner un nom, de fixer les prérogatives de ces membres et d’indiquer la nature de leur participation financière (pas le montant).
-                <br>
-                L’association connait par défaut deux catégories d’adhérents ; les membres et les membres bienfaiteurs qui ne disposent pas de voix à l’assemblée générale.
+              Votre association peut identifier des membres fondateurs, pour leur conférer un statut particulier (facultatif). Par exemple, les membres fondateurs seront membre de droit du conseil d’administration d’une maison de retraite ou ils exerceront un droit de veto dans le recrutement d’un club privé.
+              <br>
+              A la qualité de fondateurs, l’association peut attacher toutes sortes de fonctions et privilèges (par ex. La dispense du paiement d’une cotisation).  Les membres fondateurs doivent être identifiés nominativement dans les statuts ou figurer sur une liste en annexe des statuts déposés en préfecture. Les privilèges ne doivent pas porter atteinte au caractère désintéressé de la gestion associative.
+              <br>
+              On peut créer autant de catégorie de membres que l’on veut ; il suffit de leur donner un nom, de fixer les prérogatives de ces membres et d’indiquer la nature de leur participation financière (pas le montant).
+              <br>
+              L’association connait par défaut deux catégories d’adhérents ; les membres et les membres bienfaiteurs qui ne disposent pas de voix à l’assemblée générale.
               </label>
               <label>
-                <strong>Créer de nouvelles catégories de membres:</strong>
+              <strong>Créer de nouvelles catégories de membres:</strong>
               </label>
               <label class="checkbox">
-                <input type="checkbox">
-                Collèges
+              <input type="checkbox">
+              Collèges
               </label>
               <label class="checkbox">
-                <input type="checkbox">
-                Fondateurs
+              <input type="checkbox">
+              Fondateurs
               </label>
               <label>Autres</label>
               <input type="textarea" placeholder="">
-                    </label>
+              </label>
             </fieldset>
             <hr>
             <fieldset>
               <label>
-                Les membres de l’association ont les droits suivants :
+              Les membres de l’association ont les droits suivants :
               </label>
               <label class="checkbox">
-                <input type="checkbox" checked>
-                Participer aux activités de l’association
+              <input type="checkbox" checked>
+              Participer aux activités de l’association
               </label>
               <label class="checkbox">
-                <input type="checkbox" checked>
-                Participer aux assemblées générales, avec voix consultative
+              <input type="checkbox" checked>
+              Participer aux assemblées générales, avec voix consultative
               </label>
               <label class="checkbox">
-                <input type="checkbox" checked>
-                Participer aux assemblées générales, avec voix délibérative
+              <input type="checkbox" checked>
+              Participer aux assemblées générales, avec voix délibérative
               </label>
               <label class="checkbox">
-                <input type="checkbox" checked>
-                Elire et révoquer les dirigeants
+              <input type="checkbox" checked>
+              Elire et révoquer les dirigeants
               </label>
               <label class="checkbox">
-                <input type="checkbox" checked>
-                Etre éligible aux fonctions dirigeantes
+              <input type="checkbox" checked>
+              Etre éligible aux fonctions dirigeantes
               </label>
               <label class="checkbox">
-                <input type="checkbox" checked>
-                Tous ces droits (recommandé)
+              <input type="checkbox" checked>
+              Tous ces droits (recommandé)
               </label>
             </fieldset>
           </div>
