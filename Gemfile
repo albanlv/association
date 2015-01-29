@@ -11,9 +11,11 @@ gem 'rack-flash3'
 
 group :production, :staging do
   gem 'thin'
+  gem 'rspec'
 end
 
 group :development do
+  gem 'byebug'
   gem 'pry'
   gem 'pry-doc'
   gem 'shotgun'

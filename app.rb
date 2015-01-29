@@ -2,6 +2,7 @@ require 'sinatra'
 require 'mandrill'
 require 'base64'
 require 'rack-flash'
+require_relative 'lib/status'
 
 Bundler.require(:default, ENV['RACK_ENV'].to_sym)
 
@@ -29,20 +30,19 @@ def charge(email:, token:, price:)
                         :customer    => customer.id)
 end
 
-
-def pdf(status:)
-  @status = OpenStruct.new(status)
+def pdf(status)
+  @status = Status.new(status)
   `echo "#{erb(:pdf, layout: false)}" | bundle exec wkhtmltopdf --encoding utf8 - - 2>/dev/null`
 end
 
 def send_email(email:, key:, status:)
   api = Mandrill::API.new(key)
-  api.messages.send(subject: "Your status is ready",
-                    from_email: "support@association.com",
-                    from_name: "Association",
+  api.messages.send(subject: "Association 1901: Vos statuts",
+                    from_email: "mail@association1901.fr",
+                    from_name: "Association 1901",
                     attachments: [{type: "application/pdf;base64",
                                    name: 'status.pdf',
-                                   content: Base64.encode64(pdf(status: status))}],
+                                   content: Base64.encode64(status)}],
                     text: erb(:"mail.text"),
                     html: erb(:"mail.html"),
                     to: [{email: email}]).first.tap do |result|
@@ -58,7 +58,17 @@ helpers do
       out.merge type => flash.send(type)
     end.delete_if{ |_, msg| msg.nil? }
   end
+
+  def development?
+    ENV['RACK_ENV'] == 'development'
+  end
 end
+
+before do
+  msg = "Processing #{request.env['REQUEST_METHOD']} #{request.env['REQUEST_PATH']}"
+  msg += " with params: \n #{params}" unless params.empty?
+  puts msg
+end if development?
 
 get '/' do
   erb :index
@@ -78,12 +88,15 @@ post '/charge' do
          token: params[:stripeToken],
          price: settings.price)
 
+  status = pdf(JSON.load(session[:status]))
+
   send_email(email: params[:stripeEmail],
              key: settings.mandrill_apikey,
-             status: JSON.load(session[:status]))
+             status: status)
 
-  flash.success = "The email to #{params[:stripeEmail]} has been sent."
-  redirect to('/')
+  response['Content-Type']        = 'application/pdf'
+  response['Content-Disposition'] = 'inline'
+  status
 end
 
 error Stripe::StripeError do
