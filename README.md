@@ -25,7 +25,3 @@ To deploy new code do:
 
 NOTE: If you are setting up a vanilla *private pimp cloud's* image you need to make a change in `/etc/nginx/sites-enabled/app` file.
 The `root` has to be set to `/home/deployer/association/public`.
-
-## Testing
-
-Do: `bundle exec rspec`
