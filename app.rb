@@ -43,7 +43,8 @@ def send_email(email:, key:, status:)
                     attachments: [{type: "application/pdf;base64",
                                    name: 'status.pdf',
                                    content: Base64.encode64(pdf(status: status))}],
-                    text: "Please find the attached status",
+                    text: erb(:"mail.text"),
+                    html: erb(:"mail.html"),
                     to: [{email: email}]).first.tap do |result|
     if result['status'] == 'rejected'
       raise SendError.new("Could not send the email - #{result['reject_reason']}")
