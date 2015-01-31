@@ -1,35 +1,34 @@
 <div class="tab-pane" id="tab1">
   <fieldset>
-        <legend>Choisissez votre type d'association</legend>
-        <label>
-          Par défaut, il est proposé de créer une association déclarée. Ce type d’association correspond aux situations les plus courantes. Toutefois vous pouvez décider de créer une association non déclarée. Si vous prévoyez de solliciter un agrément administratif, cochez la case correspondante : vos statuts seront alors adaptés aux exigences de la loi du 22 mars 2012.
-        </label>
-        <label>Un seul choix est possible:</label>
-        <label class="radio">
-          <input type="radio" name="status[type]" value="declared" ng-model="status.type" />
-          <a href="#" data-toggle="tooltip" data-placement="right" data-original-title="Ce type d’association est simple et dispose d’une capacité juridique quasi entière, sous réserve d’effectuer une simple déclaration auprès de la préfecture. L’association déclarée vous permet d’ouvrir un compte en banque, de collecter des fonds au service de votre projet, de recevoir des subventions et d’ester en justice. Selon la taille de votre association, nous vous proposerons dans la suite du questionnaire de prévoir ou pas la présence d’un conseil d’administration.">Association déclarée</a>
-        </label>
-        <label class="radio">
-          <input type="radio" name="status[type]" value="non_declared" ng-model="status.type" />
-          <a href="#" data-toggle="tooltip" data-placement="right" data-original-title="Il est possible de créer une association sans en faire la déclaration en préfecture. L’association non déclarée ne dispose pas de la personnalité juridique et fonctionne comme un contrat privé entre ses membres. Elle ne pourra pas ouvrir de compte bancaire (les banques refusent de le faire), ni percevoir de subventions (ce serait illégal) ou de dons, ni conclure en son nom de contrat (par ex. location immobilière ou assurance de responsabilité).
-          Pour votre association non déclarée, nous vous proposons des statuts adaptés, sans conseil d’administration, pour un fonctionnement souple et fluide. La mention de la non-déclaration figure dans les statuts et si vous décidez de déclarer finalement votre association, il vous faudra procéder à une modification statutaire. ">Association non déclarée</a>
-        </label>
-        <label class="radio">
-          <input type="radio" name="status[type]" value="authorized" ng-model="status.type" />
-          <a href="#" data-toggle="tooltip" data-placement="right" data-original-title="Dans de nombreux secteurs, les associations peuvent solliciter un agrément de l’administration qui peut ouvrir droit à certains avantages ou conditionner la pratique des activités. Les agréments comportent tous des exigences à propos des statuts, variables suivant les Ministères. La loi du 22 mars 2012 exige des associations agréées qu’elles répondent à un objet d’intérêt général, qu’elles fonctionnent de manière démocratique et fassent preuve de transparence financière.
-          Si vous envisagez de solliciter un agrément, cochez cette case et vos statuts seront mis en conformité avec la loi du 22 mars 2012. Vous pourrez également spécifier le type d’agrément sollicité pour que vos statuts soient complétés.">Association agréée</a>
-        </label>
+    <legend>Choisissez votre type d'association</legend>
+    <label>
+    Par défaut, il est proposé de créer une association déclarée. Ce type d’association correspond aux situations les plus courantes. Toutefois vous pouvez décider de créer une association non déclarée. Si vous prévoyez de solliciter un agrément administratif, cochez la case correspondante : vos statuts seront alors adaptés aux exigences de la loi du 22 mars 2012.
+    </label>
+    <label>Un seul choix est possible:</label>
+    <label class="radio">
+    <input type="radio" name="status[type]" value="declared" ng-model="status.type" />
+    <a href="#" data-toggle="tooltip" data-placement="right" data-original-title="Ce type d’association est simple et dispose d’une capacité juridique quasi entière, sous réserve d’effectuer une simple déclaration auprès de la préfecture. L’association déclarée vous permet d’ouvrir un compte en banque, de collecter des fonds au service de votre projet, de recevoir des subventions et d’ester en justice. Selon la taille de votre association, nous vous proposerons dans la suite du questionnaire de prévoir ou pas la présence d’un conseil d’administration.">Association déclarée</a>
+    </label>
+    <label class="radio">
+    <input type="radio" name="status[type]" value="non_declared" ng-model="status.type" />
+    <a href="#" data-toggle="tooltip" data-placement="right" data-original-title="Il est possible de créer une association sans en faire la déclaration en préfecture. L’association non déclarée ne dispose pas de la personnalité juridique et fonctionne comme un contrat privé entre ses membres. Elle ne pourra pas ouvrir de compte bancaire (les banques refusent de le faire), ni percevoir de subventions (ce serait illégal) ou de dons, ni conclure en son nom de contrat (par ex. location immobilière ou assurance de responsabilité).
+      Pour votre association non déclarée, nous vous proposons des statuts adaptés, sans conseil d’administration, pour un fonctionnement souple et fluide. La mention de la non-déclaration figure dans les statuts et si vous décidez de déclarer finalement votre association, il vous faudra procéder à une modification statutaire. ">Association non déclarée</a>
+    </label>
+    <label class="radio">
+    <input type="radio" name="status[type]" value="authorized" ng-model="status.type" />
+    <a href="#" data-toggle="tooltip" data-placement="right" data-original-title="Dans de nombreux secteurs, les associations peuvent solliciter un agrément de l’administration qui peut ouvrir droit à certains avantages ou conditionner la pratique des activités. Les agréments comportent tous des exigences à propos des statuts, variables suivant les Ministères. La loi du 22 mars 2012 exige des associations agréées qu’elles répondent à un objet d’intérêt général, qu’elles fonctionnent de manière démocratique et fassent preuve de transparence financière.
+      Si vous envisagez de solliciter un agrément, cochez cette case et vos statuts seront mis en conformité avec la loi du 22 mars 2012. Vous pourrez également spécifier le type d’agrément sollicité pour que vos statuts soient complétés.">Association agréée</a>
+    </label>
   </fieldset>
   <fieldset>
     <legend>Choisissez la dénomination de votre association</legend>
     <label>Il s’agit du nom de votre association, tel qu’il apparaîtra dans tous les documents officiels, par ex.  <em>Les joyeux randonneurs crestois</em>. Ne faites pas référence au terme « association » ou à la loi de 1901, Vous pouvez adopter une dénomination de fantaisie (par ex. Crisalis) mais attention à ne pas enfreindre les droits des tiers (entreprises, marques). Consultez ici quelques conseils pour choisir en toute sécurité la dénomination de votre association. Lien</label>
     <input type="text" placeholder="" name="status[name]" ng-model="status.name" required/>
   </fieldset>
-  <hr>
   <fieldset>
     <legend>Siège de votre association</legend>
     <label>
-      Il s’agit de l’adresse de domiciliation de votre association. Nous vous conseillons de préciser uniquement la commune et le code postal. C’est la seule exigence de la loi. De cette manière, vous pourrez déplacer le siège dans la commune sans procéder à une modification des statuts. Si vous voulez malgré tout préciser la rue, cliquez sur la case correspondante.
+    Il s’agit de l’adresse de domiciliation de votre association. Nous vous conseillons de préciser uniquement la commune et le code postal. C’est la seule exigence de la loi. De cette manière, vous pourrez déplacer le siège dans la commune sans procéder à une modification des statuts. Si vous voulez malgré tout préciser la rue, cliquez sur la case correspondante.
     </label>
     <label>Commune</label>
     <input type="text" placeholder="Commune" name="status[city]" ng-model="status.city" required />
@@ -41,13 +40,11 @@
     <div ng-show="form.address">
       <input type="text" placeholder="Adresse" name="status[address]" ng-model="status.address" />
     </div>
-
   </fieldset>
-  <hr>
   <fieldset>
     <legend>Durée de votre association</legend>
     <label>
-      Par défaut, nous vous proposons une durée illimitée. (Cela ne vous empêche pas à n’importe quel moment de réunir une assemblée générale pour dissoudre l’association et mettrez fin au projet). Toutefois, vous pouvez spécifier une durée de vie limitée pour votre association si cela est important (association de préfiguration, association portant un contrat immobilier, etc). Cliquez alors sur la case correspondante pour définir le terme de votre association.
+    Par défaut, nous vous proposons une durée illimitée. (Cela ne vous empêche pas à n’importe quel moment de réunir une assemblée générale pour dissoudre l’association et mettrez fin au projet). Toutefois, vous pouvez spécifier une durée de vie limitée pour votre association si cela est important (association de préfiguration, association portant un contrat immobilier, etc). Cliquez alors sur la case correspondante pour définir le terme de votre association.
     </label>
     <label><em>Je veux fixer une durée limitée à mon association</em></label>
     <button class="btn btn-info"type="button" ng-click="status.duration = true">Renseigner</button>
@@ -61,11 +58,10 @@
       <input type="text" placeholder="événement" name="status[end_event]" ng-model="end_event">
     </div>
   </fieldset>
-  <hr>
   <fieldset>
     <legend>Objet de votre association</legend>
     <label>
-      Il s’agit du but poursuivi par votre association, par ex. la pratique des arts plastiques ou la représentation des locataires de telle résidence. Nous vous proposons un certain nombre d’activités parmi les plus courantes.
+    Il s’agit du but poursuivi par votre association, par ex. la pratique des arts plastiques ou la représentation des locataires de telle résidence. Nous vous proposons un certain nombre d’activités parmi les plus courantes.
     </label>
     <table class="table table-hover table-bordered table-striped">
       <caption>Cocher un seul choix correspondant à l'activité principale</caption>
@@ -79,8 +75,8 @@
         <tr>
           <td>
             <label class="radio">
-              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-              Association proposant aux particuliers des activités loisirs et artistiques en groupe/milieu scolaire
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+            Association proposant aux particuliers des activités loisirs et artistiques en groupe/milieu scolaire
             </label>
           </td>
           <td>
@@ -90,8 +86,8 @@
         <tr>
           <td>
             <label class="radio">
-              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-              Association artistique spectacle vivant amateur
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+            Association artistique spectacle vivant amateur
             </label>
           </td>
           <td>
@@ -101,9 +97,9 @@
         <tr>
           <td>
             <label class="radio">
-              <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-              <input type="radio">
-              Association portant une action collective, intérêt général local
+            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+            <input type="radio">
+            Association portant une action collective, intérêt général local
             </label>
           </td>
           <td>
@@ -113,9 +109,9 @@
         <tr>
           <td>
             <label class="radio">
-              <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
-              <input type="radio">
-              Association humanitaire ou de solidarité internationale (faisant appel aux dons)
+            <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+            <input type="radio">
+            Association humanitaire ou de solidarité internationale (faisant appel aux dons)
             </label>
           </td>
           <td>
@@ -125,8 +121,8 @@
         <tr>
           <td>
             <label class="radio">
-              <input type="radio" name="optionsRadios" id="optionsRadios5" value="option5">
-              Association proposant des services au domicile des personnes
+            <input type="radio" name="optionsRadios" id="optionsRadios5" value="option5">
+            Association proposant des services au domicile des personnes
             </label>
           </td>
           <td>
@@ -136,8 +132,8 @@
         <tr>
           <td>
             <label class="radio">
-              <input type="radio" name="optionsRadios" id="optionsRadios6" value="option6">
-              Association de défense de l’environnement
+            <input type="radio" name="optionsRadios" id="optionsRadios6" value="option6">
+            Association de défense de l’environnement
             </label>
           </td>
           <td>
@@ -147,8 +143,8 @@
         <tr>
           <td>
             <label class="radio">
-              <input type="radio" name="optionsRadios" id="optionsRadios7" value="option7">
-              Association de défense des consommateurs
+            <input type="radio" name="optionsRadios" id="optionsRadios7" value="option7">
+            Association de défense des consommateurs
             </label>
           </td>
           <td>
@@ -158,8 +154,8 @@
         <tr>
           <td>
             <label class="radio">
-              <input type="radio" name="optionsRadios" id="optionsRadios8" value="option8">
-              Association gestionnaire d’un équipement collectif
+            <input type="radio" name="optionsRadios" id="optionsRadios8" value="option8">
+            Association gestionnaire d’un équipement collectif
             </label>
           </td>
           <td>
@@ -169,8 +165,8 @@
         <tr>
           <td>
             <label class="radio">
-              <input type="radio" name="optionsRadios" id="optionsRadios9" value="option9">
-              Association portant une communauté en ligne, un site web, un forum
+            <input type="radio" name="optionsRadios" id="optionsRadios9" value="option9">
+            Association portant une communauté en ligne, un site web, un forum
             </label>
           </td>
           <td>
@@ -180,8 +176,8 @@
         <tr>
           <td>
             <label class="radio">
-              <input type="radio" name="optionsRadios" id="optionsRadios10" value="option10">
-              Association portant un cercle privé, club,amicale
+            <input type="radio" name="optionsRadios" id="optionsRadios10" value="option10">
+            Association portant un cercle privé, club,amicale
             </label>
           </td>
           <td>
@@ -191,8 +187,8 @@
         <tr>
           <td>
             <label class="radio">
-              <input type="radio" name="optionsRadios" id="optionsRadios11" value="option11">
-              Fédération d’associations, réseau d’entreprises
+            <input type="radio" name="optionsRadios" id="optionsRadios11" value="option11">
+            Fédération d’associations, réseau d’entreprises
             </label>
           </td>
           <td>
@@ -201,23 +197,22 @@
       </tbody>
     </table>
     <label>
-      Si votre projet ne rentre dans aucun de ces cas, formulez ci-dessous l’objet de votre association.
+    Si votre projet ne rentre dans aucun de ces cas, formulez ci-dessous l’objet de votre association.
     </label>
     <input type="textarea" placeholder="">
   </fieldset>
-  <hr>
   <fieldset>
     <legend>Moyens d'action</legend>
     <div ng-show="status.type == 'declared' || status.type == 'authorized'">
-    <label>
+      <label>
       Il est d’usage de préciser dans les statuts les moyens d’actions que l’association mettra en œuvre pour réaliser son objet. Nous vous proposons par défaut une liste qui n’est pas limitative. Nous avons également ajouté les moyens spécifiques correspondant à l’objet que vous avez déclaré. Vous pouvez toutefois ajouter d’autres moyens en cochant la case prévue à cet effet. Si votre association conduit des activités lucratives, celles-ci seront automatiquement ajoutées à cette rubrique.
-    </label>
-    <label>
+      </label>
+      <label>
       <em>Attention : ne modifiez cette rubrique que si vous savez exactement ce que vous faites.</em>
-    </label>
-    <label class="checkbox">
-        <input type="checkbox" name="status[mean_publication]" ng-model="status.mean_publication" />
-         les publications, les conférences, les réunions de travail ;
+      </label>
+      <label class="checkbox">
+      <input type="checkbox" name="status[mean_publication]" ng-model="status.mean_publication" />
+      les publications, les conférences, les réunions de travail ;
       </label>
       <label class="checkbox">
         <bool-input name="mean_event">
@@ -225,26 +220,25 @@
         l'organisation de conventions et événements;
       </label>
       <label class="checkbox">
-          <input type="checkbox" name="status[mean_manifestation]" ng-model="status.mean_manifestation" />
-        l’organisation de diverses manifestations et toute initiative pouvant aider à la réalisation de l’objet de l’association ;
+      <input type="checkbox" name="status[mean_manifestation]" ng-model="status.mean_manifestation" />
+      l’organisation de diverses manifestations et toute initiative pouvant aider à la réalisation de l’objet de l’association ;
       </label>
       <label class="checkbox">
-        <input type="checkbox" name="status[mean_others]" ng-model="status.mean_others"  />
-        tout autre moyen permettant l'accomplissement de son objet ;
+      <input type="checkbox" name="status[mean_others]" ng-model="status.mean_others"  />
+      tout autre moyen permettant l'accomplissement de son objet ;
       </label>
       <label>Ajouter des ativités annexes</label>
       <input type="textarea" name="status[mean_added]" placeholder="">
-      </div>
-        <div ng-show="status.type == 'non_declared'">
-        <a href="#" data-toggle="tooltip" data-placement="right" data-original-title="Les moyens d’actions d’une association non déclarée sont limitées. Vous ne pouvez modifier cette clause ">
-          <ul>
-                <li>l'organisation entre les membres de réunions, séances de travail ;</li>
-                <li>l’organisation entre les membres de diverses manifestations et toute initiative pouvant aider à la réalisation de l’objet de l’association ;</li>
-                <li>Tout autre moyen permettant l'accomplissement de son objet et compatible avec l’absence de personnalité juridique de l’association.</li>
-            </ul>
-          </a>
-        </div>
+    </div>
+    <div ng-show="status.type == 'non_declared'">
+      <a href="#" data-toggle="tooltip" data-placement="right" data-original-title="Les moyens d’actions d’une association non déclarée sont limitées. Vous ne pouvez modifier cette clause ">
+        <ul>
+          <li>l'organisation entre les membres de réunions, séances de travail ;</li>
+          <li>l’organisation entre les membres de diverses manifestations et toute initiative pouvant aider à la réalisation de l’objet de l’association ;</li>
+          <li>Tout autre moyen permettant l'accomplissement de son objet et compatible avec l’absence de personnalité juridique de l’association.</li>
+        </ul>
+      </a>
+    </div>
     </label>
   </fieldset>
-  <hr>
 </div>
