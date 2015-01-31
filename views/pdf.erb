@@ -36,13 +36,13 @@
         </ul>
         <%  when 'declared', 'authorized' %>
             <% if @status.mean_publication %>
-             les publications, les conférences, les réunions de travail ;¬
+             les publications, les conférences, les réunions de travail ;
             <% end %>
             <% if @status.mean_event %>
-              l'organisation de conventions et événements;¬
+              l'organisation de conventions et événements;
             <% end %>
             <% if @status.mean_manifestation %>
-              l’organisation de diverses manifestations et toute initiative pouvant aider à la réalisation de l’objet de l’association ;¬
+              l’organisation de diverses manifestations et toute initiative pouvant aider à la réalisation de l’objet de l’association ;
             <% end %>
             <% if @status.mean_other %>
               tout autre moyen permettant l'accomplissement de son objet ;
@@ -54,7 +54,7 @@
         <h3>Article 4 : Durée de l'association</h3>
         <% if @status.end_duration.blank? and @status.end_date.blank? and @status.end_event.blank? %>
          <p> La durée de l’association est illimitée.</p>
-       <% end %>¬
+       <% end %>
        <% if @status.end_duration.present? %>
          L’association est constituée pour une durée de <%= @status.end_duration %>, à compter de la publication de sa création au Journal Officiel.
        <% end %>
@@ -63,7 +63,7 @@
        <% end %>
        <% if @status.end_event.present? %>
          L’association prendra fin à l’issue de l’assemblée générale constatant la réalisation de l’événement suivant : <%= @status.end_event %>
-       <% end %>¬
+       <% end %>
       <h3>Article 17 : Ressources de l'association</h3>
         <% case @status.type
             when 'non_declared' %>
