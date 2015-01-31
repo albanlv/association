@@ -1,0 +1,102 @@
+<div class="tab-pane" id="tab2">
+  <fieldset>
+    <legend>Quel est l'ordre de grandeur du budget annuel (prévisionnel) de votre association:</legend>
+    <label>Un seul choix possible:</label>
+    <label class="radio">
+      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+      Quelques milliers d'euros au maximum
+    </label>
+    <label class="radio">
+      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+      Entre 10 et 100.000 euros
+    </label>
+    <label class="radio">
+      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+      Supérieur à 100.000 euros
+    </label>
+  </fieldset>
+  <fieldset>
+    <legend>Régimes particuliers (plusieurs choix possibles)</legend>
+    <div class="row-fluid">
+      <div class="span4">
+        <label class="checkbox">
+          <input type="checkbox">
+          Association fermée
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          Association sollicitant un agrément (intérêt général)
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          Association sollicitant des subventions publiques
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          Association émettant des reçus fiscaux pour les dons et les adhésions (art. 200 CGI)
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          Association conduisant des activités lucratives
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          Aucun régime particulier
+        </label>
+      </div>
+      <div class="span8 well">
+        Pour les associations qui exercent une activité sportive, éducative, culturelle ou sociale, une possibilité d’exonération existe si l’association réserve son activité à ses seuls membres. Lorsque l’activité ou les activités ne profite(nt) qu’aux seuls adhérents, un régime d’exonération des impôts commerciaux s’applique aux recettes versées par les usagers/adhérents, celui des associations dites « fermées ».
+      </div>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>Sources de revenus</legend>
+      <div ng-show="status.type == 'declared' || status.type == 'authorized'">
+        <label class="checkbox">
+          <input type="checkbox">
+          Le bénévolat ;
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          Les cotisations ;
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          Les subventions de l’état, des collectivités territoriales et des établissements publics ;
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          Le produit des manifestations qu’elle organise ;
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          Les intérêts et redevances des biens et valeurs qu’elle peut posséder ;
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          La rétribution des services rendus ou des prestations fournies par l'association ;
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          Les dons manuels ;
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          à titre exceptionnel le recours en cas de nécessité, à un ou plusieurs emprunts bancaires ou privés
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          (facultatif) L’appel à la générosité du public
+        </label>
+      </div>
+      <div ng-show="status.type == 'non_declared'">
+        <a href="#" data-toggle="tooltip" data-placement="right" data-original-title="Dans une association non déclarée, les types de ressources sont limités par l’absence de personnalité juridique. Vous ne pouvez donc modifier cette clause.">
+         <ul>
+           <li>l'organisation entre les membres de réunions, séances de travail ;</li>
+           <li>l’organisation entre les membres de diverses manifestations et toute initiative pouvant aider à la réalisation de l’objet de l’association ;</li>
+           <li>Tout autre moyen permettant l'accomplissement de son objet et compatible avec l’absence de personnalité juridique de l’association.</li>
+         </ul>
+       </a>
+     </div>
+  </fieldset>
+</div>

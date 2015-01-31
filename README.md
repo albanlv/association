@@ -19,8 +19,8 @@ To deploy new code do:
 
 * `ssh deployer@178.62.143.175`
 * `cd association`
-* `bundle install`
 * `git pull origin master`
+* `bundle install`
 * `touch tmp/restart.txt`
 
 NOTE: If you are setting up a vanilla *private pimp cloud's* image you need to make a change in `/etc/nginx/sites-enabled/app` file.
