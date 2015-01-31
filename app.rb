@@ -2,6 +2,7 @@ require 'sinatra'
 require 'mandrill'
 require 'base64'
 require 'rack-flash'
+require 'active_support/core_ext/object/blank'
 require_relative 'lib/status'
 
 Bundler.require(:default, ENV['RACK_ENV'].to_sym)

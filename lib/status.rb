@@ -22,7 +22,7 @@ class Status
               "#{@params[key]} is not representing a boolean value"
       end
     else
-      @params[key]
+      @params[key.to_s]
     end
   end
 

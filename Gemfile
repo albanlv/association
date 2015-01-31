@@ -8,6 +8,7 @@ gem 'stripe',      source: 'https://code.stripe.com'
 gem 'rest-client', source: 'https://code.stripe.com/'
 gem 'mandrill-api'
 gem 'rack-flash3'
+gem 'activesupport', require: false
 
 group :production, :staging do
   gem 'thin'

@@ -2,6 +2,12 @@ GEM
   remote: https://rubygems.org/
   remote: https://code.stripe.com/
   specs:
+    activesupport (4.1.8)
+      i18n (~> 0.6, >= 0.6.9)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.1)
+      tzinfo (~> 1.1)
     byebug (3.5.1)
       columnize (~> 0.8)
       debugger-linecache (~> 1.2)
@@ -13,13 +19,14 @@ GEM
     diff-lcs (1.2.5)
     eventmachine (1.0.4)
     excon (0.43.0)
+    i18n (0.7.0)
     json (1.8.2)
     mandrill-api (1.0.53)
       excon (>= 0.16.0, < 1.0)
       json (>= 1.7.7, < 2.0)
     method_source (0.8.2)
     mime-types (2.4.3)
-    netrc (0.10.2)
+    minitest (5.5.1)
     pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -32,9 +39,8 @@ GEM
       rack
     rack-protection (1.5.3)
       rack
-    rest-client (1.7.2)
-      mime-types (>= 1.16, < 3.0)
-      netrc (~> 0.7)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
     rspec (3.1.0)
       rspec-core (~> 3.1.0)
       rspec-expectations (~> 3.1.0)
@@ -62,7 +68,10 @@ GEM
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0)
       rack (~> 1.0)
+    thread_safe (0.3.4)
     tilt (1.4.1)
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
     wkhtmltopdf-binary (0.9.9.3)
     yard (0.8.7.6)
 
@@ -70,6 +79,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activesupport
   byebug
   mandrill-api
   pry

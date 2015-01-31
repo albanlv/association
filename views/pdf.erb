@@ -15,7 +15,7 @@
 
           dénomination : <%= @status.name %></li>
           <li>Le siège social est fixé à <%= @status.city %> (CP <%= @status.post_code %>)
-          <% if !@status.address.empty? %>
+          <% if @status.address.present? %>
              , <%= @status.address %>
            <% end %>
           . Il pourra être modifié par décision du Bureau.</li>
@@ -51,6 +51,19 @@
                 <%= @status.mean_added %>
             <% end %>
         <% end %>
+        <h3>Article 4 : Durée de l'association</h3>
+        <% if @status.end_duration.blank? and @status.end_date.blank? and @status.end_event.blank? %>
+         <p> La durée de l’association est illimitée.</p>
+       <% end %>¬
+       <% if @status.end_duration.present? %>
+         L’association est constituée pour une durée de <%= @status.end_duration %>, à compter de la publication de sa création au Journal Officiel.
+       <% end %>
+       <% if @status.end_date.present? %>
+         L’association prendra fin au <%= @status.end_date %>.
+       <% end %>
+       <% if @status.end_event.present? %>
+         L’association prendra fin à l’issue de l’assemblée générale constatant la réalisation de l’événement suivant : <%= @status.end_event %>
+       <% end %>¬
       <h3>Article 17 : Ressources de l'association</h3>
         <% case @status.type
             when 'non_declared' %>

@@ -36,8 +36,9 @@
     <label>Code postal</label>
     <input type="text" placeholder="Code postal" name="status[post_code]" ng-model="status.post_code" required />
     <label><em>Je veux faire figurer l'adresse postale de l'association</em></label>
-    <button class="btn btn-info" type="button" ng-click="status.address = true">Renseigner l'adresse</button>
-    <div ng-show="status.address">
+    <button class="btn btn-info" type="button" ng-click="form.address = true">Renseigner l'adresse</button>
+    <br>
+    <div ng-show="form.address">
       <input type="text" placeholder="Adresse" name="status[address]" ng-model="status.address" />
     </div>
 
@@ -51,12 +52,13 @@
     <label><em>Je veux fixer une durée limitée à mon association</em></label>
     <button class="btn btn-info"type="button" ng-click="status.duration = true">Renseigner</button>
     <div ng-show="status.duration">
+      <label><em>Un seul choix est possible</em>
       <label>Fixer la durée de l'association</label>
-      <input type="text" placeholder="">
-      <label>Fixer la date de fin de l'association</label>
-      <input type="date" placeholder="">
-      <label>Préciser un événement qui mettra fin à l'association</label>
-      <input type="text" placeholder="">
+      <input type="text" placeholder="Durée" name="status[end_duration]" ng-model="end_duration">
+      <label>(ou) Fixer la date de fin de l'association</label>
+      <input type="date" placeholder="Date" name="status[end_date]" ng-model="end_date">
+      <label>(ou) Préciser un événement qui mettra fin à l'association</label>
+      <input type="text" placeholder="événement" name="status[end_event]" ng-model="end_event">
     </div>
   </fieldset>
   <hr>
