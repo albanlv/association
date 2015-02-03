@@ -10,9 +10,13 @@ gem 'mandrill-api'
 gem 'rack-flash3'
 gem 'activesupport', require: false
 
-group :production, :staging do
+group :test do
   gem 'thin'
   gem 'rspec'
+  gem 'capybara'
+  gem 'poltergeist'
+  gem 'pdf-inspector', '~> 1.2.0'
+  gem 'rack_session_access'
 end
 
 group :development do

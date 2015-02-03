@@ -20,8 +20,7 @@
           <% end %>
           . Il pourra être modifié par décision du Bureau.</li>
           <li>L'association est régie par la loi du 1er juillet 1901 et le décret du 16 août 1901.</li>
-          <% case @status.type
-          when 'non_declared' %>
+          <% if @status.type == 'non_declared' %>
             <li> Les fondateurs de l’association ont décidé de ne pas procéder à sa publication conformément à la faculté ouverte par l’article 2 de la loi du 1er juillet 1901.</li>
           <% end %>
       </ol>
