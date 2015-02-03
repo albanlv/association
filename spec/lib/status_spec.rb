@@ -30,7 +30,7 @@ RSpec.describe Status do
             end
           end
 
-          ['false', 'off', '0', nil].each do |bool_value|
+          ['false', 'off', '0', nil, ''].each do |bool_value|
             context "the value set is #{bool_value}" do
               let(:value){ bool_value }
               it { should eq false }
