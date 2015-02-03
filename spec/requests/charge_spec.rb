@@ -14,10 +14,6 @@ RSpec.describe 'POST /charge' do
     @text ||= PDF::Inspector::Text.analyze(body).strings.join
   end
 
-  subject do
-    pdf_text .body
-  end
-
   let(:session) do
     {'rack.session' => {'status' => {'name'      => 'Foo',
                                      'city'      => 'Bar',
