@@ -5,7 +5,7 @@ class Status
     'mean_publication',
     'mean_event',
     'mean_manifestation',
-    'mean_others'
+    'mean_other'
   ]
 
   def initialize(params)
